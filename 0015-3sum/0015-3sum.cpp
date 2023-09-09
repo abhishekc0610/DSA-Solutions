@@ -13,8 +13,7 @@ public:
 
             while(s < e){
                 if(nums[i] + nums[s] + nums[e] == 0){
-                    vector<int> temp = {nums[i], nums[s], nums[e]};
-                    st.insert(temp);
+                    st.insert({nums[i], nums[s], nums[e]});
                     s++;
                 }
                 else if(nums[i] + nums[s] + nums[e] < 0){
